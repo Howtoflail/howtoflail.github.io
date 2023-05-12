@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Generic Page - Massively by HTML5 UP</title>
+		<title>Webapp</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -19,21 +19,18 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Massively</a>
+						<a href="index.html" class="logo">Home</a>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li><a href="index.html">This is Massively</a></li>
+							<li><a href="index.html">Home</a></li>
 							<li class="active"><a href="software.html">Software Projects</a></li>
 							<li><a href="gamedesign.html">Elements Reference</a></li>
 						</ul>
 						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://github.com/Howtoflail" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 						</ul>
 					</nav>
 
@@ -43,72 +40,63 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<span class="date">April 25, 2017</span>
-									<h1>This is a<br />
-									Generic Page</h1>
-									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-									amet nullam sed etiam veroeros.</p>
+									<h1>Food delivery webapp</h1>
+									<p>A fullstack webapp that was created using React for frontend and SpringBoot for backend. <br/>
+										This web application has Docker configured for continuous integration and uses SonarQube for code quality.
+									</p>
 								</header>
 								<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus. Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum.</p>
+								<p>This application was made for a university project for the third semester and it's purpose was to get me familiarized with 
+									creating and configuring a solid REST API for the needs of a specific business/application, but also having a user-friendly frontend,
+									so that the user can easily use the website.</p>
+								<p>The web application excels mostly at the backend, having a solid foundation for most of the needs of a food delivery application.</p>
+								<h2>Features of the application</h2>
+								<p>One of the most common, but most important features of food delivery applications, is to have the ability to <b>create accounts</b>
+									because it is very convenient to just log back in the website every time and have all of your personal data and address saved
+									and order food within seconds.
+								</p>
+								<p>On this application, you need to create an account in order to use it.</p>
+								<div class="image"><img src="images/CreateUser.png" alt="User creation form" style="height: 80%; width: 80%;"/></div>
+								<p>All forms on the website are validated because every piece of data that interacts with the database is following a format declared 
+									by request classes in the backend.</p>
+								<div class="image"><img src="images/DeliveryHomePage.png" alt="Home page" style="height: 90%; width: 90%;"/></div>
+								<p>Once logged in, a user can see all the restaurants on the home page.</p>
+								<p>Logging in is done through the use of authentification and authorization. The webapp uses JWT tokens to differentiate between roles.</p>
+								<p><b>Users can click on a restaurant in order to see what items they offer.</b></p>
+								<div class="image"><img src="images/UserOrdersFood.png" alt="User orders food" style="height: 90%; width: 90%;"/></div>
+								<p>On the restaurant's page, the user can choose the items and the quantity that he wants to order, which is displayed in a basket
+									that also shows the total calculated in real time.</p>
+								<div class="image"><img src="images/Checkout.png" alt="Checkout" style="height: 90%; width: 90%;"/></div>
+								<p>The user can see all details of the order, including personal details, before confirming it.</p>
+								<br/>
+								<p>A user can also check his <b>order history</b>:</p>
+								<div class="image"><img src="images/OrderHistory.png" alt="Order history" style="height: 90%; width: 90%;"/></div>
+								<!-- later -->
+								<p><b>Businesses can join the food delivery platform</b> through the "Join us!" button that can be seen in the navigation bar,
+									which will open up a form. After filling the form, the restaurant owner can log in with the account,</p>
 							</section>
 
 					</div>
 
 				<!-- Footer -->
-					<footer id="footer">
+				<footer id="footer">
+					<section class="split contact">
 						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
+							<h3>Email</h3>
+							<p>skeenoteeth2@gmail.com</p>
 						</section>
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>1234 Somewhere Road #87257<br />
-								Nashville, TN 00000-0000</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(000) 000-0000</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">info@untitled.tld</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
+						<section>
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://github.com/Howtoflail" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
 						</section>
-					</footer>
+					</section>
+				</footer>
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						<ul><li>&copy; Dragos Andrei Munteanu</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
 					</div>
 
 			</div>
