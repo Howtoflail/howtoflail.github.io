@@ -1,0 +1,238 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Spaceshooter</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Home</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="software.html">Software Projects</a></li>
+							<li class="active"><a href="gamedesign.html">Game Design Projects</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://github.com/Howtoflail" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>First person space shooter</h1>
+									<p>A Sci-fi space piracy game with retro visuals where you shoot cargo vessels and bring their loot 
+                                        back to your mothership while dodging enemy fire. Returning loot earns you credits which you can use to buy upgrades and ammo for your ship.
+									</p>
+								</header>
+								<div class="image main"><img src="images/SpaceshipGameMainPic.png" alt="Spaceshooter main picture" style="height: 90%; width: 90%;"/></div>
+								<p>This game has been done through an university project in collaboration with 3 more students and it is our first game.
+                                    I will describe the features of the game and how far we've actually gotten to reaching our goals, after which 
+                                    I will talk about my contribution to the game.
+                                </p>
+								<h2>Features of the game</h2>
+								<p>The most important mechanics of any FPS game, including ours, is to be able to move and to shoot.</p>
+								<div class="image"><img src="images/Move_And_Shoot.gif" alt="Move And Shoot gif" style="height: 80%; width: 80%;"/></div>
+								<p>The shooting system is hitscan and it has a limited range. <br/>
+                                    The movement of the spaceship is three dimensional, so it can pitch, yaw and roll, like real aircraft.<br />
+                                    More about this later.</p>
+								<div class="image"><img src="images/Enemy_AI.gif" alt="Enemy AI" style="height: 90%; width: 90%;"/></div>
+								<p>The game also has enemy spaceships that attack you on sight, since you're a space pirate set out for plunder.</p>
+								<p>As described in the subtitle, you can gun down enemy ships, which will <b>drop credits that you can collect</b>. <br />
+                                    Upgrading the spaceship is not implemented, but this will be explained in more detail later on.</p>
+                                <div class="image"><img src="images/Shooting_Enemies.gif" alt="Shooting enemies" style="height: 90%; width: 90%;"/></div>
+								<p>Another essential feature of the game, that can be seen in the gif above, is that enemies that shoot at you will show a marker
+                                    that <b>indicates their position</b> relative to where you are currently looking at.</p>
+                                <p>Two other things worth mentioning is that the spaceship can <b>boost</b> its movement speed using its thrusters, 
+                                    but it has to recharge before it can be used again. This can be seen in the gif above, in the second bar on the bottom of the screen.<br />
+                                    The spaceship also has a <b>rechargable shield</b>, which is the blue part of the first bar on the bottom of the screen, that automatically starts
+                                    to recharge after not taking damage for a few seconds.
+                                </p>
+							</section>
+                            <section class="post">
+                                <h2>Scope of the game and related information about the project</h2>
+                                <p>In this section I will talk about the scope of the project, what we achieved and what we didn't, and overall information about the
+                                    game and the project.
+                                </p>
+                                <p>Firstly, I'd like to show the story of the game, the core loop and the visuals that we were going for. This part
+                                    is about the prototyping of the game.
+                                </p>
+                                <h3>Story</h3>
+                                <p><i>You are an ensign of the feared Argonian Rebellion, a group of rogues known for plundering cargo ships and causing general mayhem. 
+                                    Your task is to raid ships and keep your convoy safe in the meantime. Since the Federation has put 
+                                    their eye on the Rebellion, this task is more dangerous than ever before. 
+                                    Will you be able to hold your own in a rain of federation laser blasts, while still plundering the cargo holds of their convoys?</i></p>
+                                <h3>Visual style</h3>
+                                <div class="image">
+                                    <img src="images/SpaceShip_Art1.png" alt="Art picture"/> <br/>
+                                    <img src="images/SpaceShip_Art2.png" alt="Art picture"/> <br/>
+                                </div> 
+                                <h3>Core loop</h3>
+                                <p>You spawn near the mothership, receive a quest about destroying enemy spaceships, complete it, and return to the mothership to 
+                                deliver the plunder, which you can spend to upgrade your ship.</p>
+                                <h3>Scope of the project</h3>
+                                <p>The scope of the project is described well in the core loop. This is what we were going for, but it is important to know that
+                                    this was our first game, and that we had 4 days to complete this, while not all members of the team had very good programming skills.
+                                    The whole game took two weeks, but the first week was about brainstorming, prototyping and documenting the game.
+                                </p>
+                                <p><b>What we achieved:</b>
+                                    <ul>
+                                        <li>Fully functional movement of the spaceship, being able to pitch, roll and yaw, and the boost mechanic</li>
+                                        <li>Being able to shoot and destroy enemies</li>
+                                        <li>Enemy AI that follow and attack you, and act like a swarm, but that will de-aggro if you move far enough</li>
+                                        <li>HUD, including the bars at the bottom for health and thrust, and the enemy markers that are displayed around the crosshair</li>
+                                        <li>Quests, which are looting the credits that the enemy spaceships drop after being destroyed, looting cargo
+                                            that is floating around the map, and to kill all enemy spaceships, which will give the player a load more credits
+                                        </li>
+                                    </ul>
+                                </p>
+                                <p><b>What we didn't achieve:</b>
+                                    <ul>
+                                        <li>An active text/indicator of the objectives and quests</li>
+                                        <li>Being able to return to the spaceship after finishing the objectives</li>
+                                        <li>Being able to spend the cargo and make upgrades to the spaceship</li>
+                                        <li>Better lighting, since the enemy spaceships are hard to see</li>
+                                    </ul>
+                                </p>
+                                <p>The game will be available and playable on itch.io soon.</p>
+                            </section>
+                            <section class="post">
+                                <h2>My contribution to the project</h2>
+                                <p>In this section, I will discuss the significant contributions I made to the project through 
+                                    meticulous documentation in the form of development logs (devlogs).</p>
+                                <h3>Spaceship movement devlog</h3>
+                                <ul>
+                                    <li><b>Challenge:</b> 
+                                        <p style="margin-left: 5%;">Implement movement mechanic for the spaceship
+                                        (player) in our game pie group game.</p></li>
+                                    <li><b>Methods:</b>
+                                        <p style="margin-left: 5%;"><u>Library:</u><br/>
+                                        <b>1.</b> Available product analysis - Analyzed already existing
+                                        space games that use 3d movement (pitch, roll and yaw): Elite Dangerous <br/>
+                                        <b>2.</b> Literature study - Reading documentation about
+                                        adding force to rigidbodies, character movement and 3d
+                                        movement.<br/>
+                                        Links: <a href="https://docs.unity3d.com/ScriptReference/CharacterController.html">Unity character controller</a></p>
+                                        </li>
+                                    <li><b>Results:</b>
+                                        <p style="margin-left: 5%;">Functionality to move and control the spaceship in the game. The
+                                            spaceship can move forward and backward by giving it thrust or
+                                            reversing, while the pitch and yaw are controlled by the mouse or
+                                            controller right analog stick. Rolling the ship can be done with the
+                                            correspondent key presses. The ship has a little bit of drag in order to
+                                            make it more realistic, for example when starting to roll, the ship will
+                                            stop rolling at a certain time because of the drag, and it will not
+                                            continue to roll forever, since it's not affected by gravity.</p>
+                                            <!-- ADD VISUALS -->
+                                    </li>
+                                    <li><b>Validation:</b>
+                                        <p style="margin-left: 5%;">The mechanics of the movement of the spaceship are working
+                                            properly, but in order to make it a better experience for the player,
+                                            fine tuning of variables such as horizontal speed, vertical speed, thrust
+                                            speed etc. need to be tuned. This is done with the help of the group
+                                            members and testing it after every iteration.</p>
+                                            <!-- CHANGE THIS -->
+                                    </li>
+                                    <li><b>Next steps:</b>
+                                        <p style="margin-left: 5%;">Make the shooting mechanic of the spaceship.</p>
+                                            <!-- CHANGE THIS -->
+                                    </li>
+                                </ul>
+                                <h3>Spaceship shooting devlog</h3>
+                                <ul>
+                                    <li><b>Challenge:</b> 
+                                        <p style="margin-left: 5%;">Implement shooting mechanic for the spaceship (player) in our game
+                                            pie group game. This mechanic is also used for AI ships that shoot the
+                                            player.</p></li>
+                                    <li><b>Methods:</b>
+                                        <p style="margin-left: 5%;"><u>Library:</u> <br/>
+                                            <b>1.</b> Available product analysis - Analyzed already existing
+                                            games that use the hitscan shooting mechanic: CS:GO.<br/>
+                                            <b>2.</b> Literature study - Reading documentation on RayCast
+                                            in Unity and how other games implement the shooting mechanic
+                                            (projectile system instead of hitscan system)<br/>
+                                            Links: <a href="https://docs.unity3d.com/ScriptReference/Physics.Raycast.html">Unity raycast</a></p>
+                                        </li>
+                                    <li><b>Results:</b>
+                                        <p style="margin-left: 5%;">Functionality to shoot for the spaceship. The spaceship can shoot only
+                                            one type of projectiles (no multiple weapons) and it makes use of a
+                                            hitscan shooting system. This means that the travel time of the bullet
+                                            is instant, but I added a range so that the bullet does not travel an
+                                            infinite range. The bullet is always shot at the center of the screen,
+                                            that being the center of where the camera is, and bullets deal a set
+                                            amount of damage to enemies. Health was also added to enemies, and
+                                            also damage can be dealt only to objects that have the “Target” tag
+                                            and they must have a rigidbody because I added a little bit of impact
+                                            force when the bullet hits the target, to make it more realistic.</p>
+                                            <!-- ADD VISUALS -->
+                                    </li>
+                                    <li><b>Validation:</b>
+                                        <p style="margin-left: 5%;">The shooting mechanic is fully working, but values such as damage,
+                                            health of enemies and range need to be tweaked in order to create the
+                                            best user experience. This is done with the help of the group members
+                                            of the game pie group, and testing is done after every iteration.</p>
+                                            <!-- CHANGE THIS -->
+                                    </li>
+                                    <li><b>Next steps:</b>
+                                        <p style="margin-left: 5%;">Add animations and sounds for shots.</p>
+                                        <!-- CHANGE THIS -->
+                                    </li>
+                                </ul>
+                                <!-- ADD GITHUB LINK TO GAME -->
+                            </section>
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section class="split contact">
+						<section>
+							<h3>Email</h3>
+							<p>skeenoteeth2@gmail.com</p>
+						</section>
+						<section>
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://github.com/Howtoflail" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Dragos Andrei Munteanu</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
