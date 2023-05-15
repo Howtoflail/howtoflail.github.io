@@ -1,0 +1,428 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>FPS</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Home</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="software.html">Software Projects</a></li>
+							<li class="active"><a href="gamedesign.html">Game Design Projects</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://github.com/Howtoflail" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>First person shooter</h1>
+									<p>A first person shooter that takes place during The Civil War. The goal is to fight the zombies that just killed the men 
+                                        you commanded, find their source of power and destroy it. 
+									</p>
+								</header>
+								<div class="image main"><img src="images/FpsMainPic.png" alt="Fps main picture" style="height: 90%; width: 90%;"/></div>
+								<p>This game has been done through an university project in collaboration with one more student.
+                                    The features of the game can be observed in the gameplay video below. Later on, I will talk about 
+                                    how far we've actually gotten to reaching our goals, after which 
+                                    I will talk about my contribution to the game.
+                                </p>
+								<h2>Gameplay video</h2>
+								<iframe width="900" height="520" 
+                                src="https://www.youtube.com/embed/2-wQdJhY6gg"></iframe>
+							</section>
+                            <section class="post">
+                                <h2>Scope of the game and related information about the project</h2>
+                                <p>In this section I will talk about the scope of the project, what we achieved and what we didn't, and overall information about the
+                                    game and the project.
+                                </p>
+                                <p>Firstly, I'd like to show the story of the game, the core loop and the visuals that we were going for. This part
+                                    is about the prototyping of the game.
+                                </p>
+                                <h3>Story</h3>
+                                <p><i>You are part of the sixth company on the Union side of The Civil War. When stationed at the border of Oklahoma 
+                                    and Texas with the rest of your company to investigate what the Confederates are doing to gain more territory. You discover that 
+                                    the Confederates are using a biochemical weapon, which turns soldiers into brainless mutants with one objective: 
+                                    kill Union soldiers. It is now your job to destroy the Confederate labs, while fighting off mutant soldiers.</i></p>
+                                <h3>Visual style</h3>
+                                <p>Realistic, apocalyptic, war</p>
+                                <div class="image">
+                                    <img src="images/FPS_Art1.jpg" alt="Art picture"/> <br/>
+                                    <img src="images/FPS_Art2.jpg" alt="Art picture"/> <br/>
+                                    <img src="images/FPS_Art3.jpg" alt="Art picture"/> <br/>
+                                </div> 
+                                <h3>Core loop</h3>
+                                <p>You spawn in the fields, heading towards the enemy camp, where you kill mutants that are in the way, 
+                                    collect ammo scattered around the battlefields and make your way to the end of the map, where you will 
+                                    find a laboratory that you will have to destroy.</p>
+                                <h3>Scope of the project</h3>
+                                <p>The scope of this project was bigger than what we achieved, due to having to learn how to make the features that we wanted the game to have.
+                                    In the end, we accomplished most of our goals, but it could be improved visual wise to give the feeling that we wanted.
+                                    This project took 4 weeks to complete.
+                                </p>
+                                <p><b>What we achieved:</b>
+                                    <ul>
+                                        <li>Movement and camera angle for a FPS game</li>
+                                        <li>Shooting mechanic with multiple weapons that have different shooting systems, including a melee knife that 
+                                            uses an animation to attack</li>
+                                        <li>Lootable ammunition and health</li>
+                                        <li>Enemy AI that follow and attack you, and act like a swarm, but that will de-aggro if you move far enough</li>
+                                        <li>Multiple enemy types</li>
+                                        <li>HUD, including ammo and health indicator and a reload bar</li>
+                                        <li>Map that gives the feeling of a war zone in the fields of south North America</li>
+                                        <li>Animations for both the player and the enemies</li>
+                                        <li>Rigging of the weapons to the player model's hands</li>
+                                    </ul>
+                                </p>
+                                <p><b>What we didn't achieve:</b>
+                                    <ul>
+                                        <li>More bullet types</li>
+                                        <li>Certain zombies having weaknesses to different bullet types</li>
+                                        <li>An explosion for the detonation of the laboratory at the end</li>
+                                        <li>Better lighting, since it is hard to see inside a hut</li>
+                                        <li>An animation for reloading</li>
+                                    </ul>
+                                </p>
+                                <p>The game will be playable on itch.io soon.</p>
+                            </section>
+                            <section class="post">
+                                <h2>My contribution to the project</h2>
+                                <p>In this section, I will discuss the significant contributions I made to the project through 
+                                    meticulous documentation in the form of development logs (devlogs).</p>
+                                <h3>Weapons devlog</h3>
+                                <ul>
+                                    <li><b>Challenge:</b> 
+                                        <p style="margin-left: 5%;">In order to fit the aesthetic and setting of our game, it was decided that 
+                                            the main weapon that you play with is going to be a bolt action rifle, since the action takes place during 
+                                            the Civil War and you having the rank of a Sergeant Major, so having a good weapon makes the most sense. In order 
+                                            to bring some diversity to the game, a secondary weapon and a knife are also added to the player's arsenal. The secondary 
+                                            weapon is a shotgun, which is meant to deal a lot of damage at close range, like in a real life situation, but it also needs
+                                             to deal little damage or miss at longer distances because it would otherwise become overpowered and the player would always 
+                                             choose the shotgun in favor of the rifle, which is not the intended gameplay. The amount of ammo that the player finds during
+                                              the gameplay is also a very important factor when designing this, but this will not be a part of this devlog. The knife is 
+                                              part of the player's arsenal because every soldier has a melee weapon ready to use, in case he has no more ammo left, is 
+                                              currently reloading or enemies are rapidly approaching and engaging into a fight.<br/>
+                                            The challenge is to make a hitscan shooting system, for both the bolt action rifle and the shotgun because it makes 
+                                            the most sense in a small scale game. Replicating the feel of a bolt action rifle is a very important element because it makes 
+                                            the player feel more engaged and connected to the game: cocking the gun after each shot, longer reload time and overall slower to 
+                                            operate than a modern gun. The shotgun works on a very similar idea as the bolt action rifle, only it does not need to be cocked 
+                                            after every shot, but it being a double barrel shotgun, you can only shoot twice before needing to reload. The knife will make use 
+                                            of an animation in order to hit enemies, and the knife object will have a collider in order to detect hits on the enemies.</p></li>
+                                    <li><b>Methods:</b>
+                                        <p style="margin-left: 5%;">
+                                            <u>Literature study (links):</u><br/>
+                                            1. <a href="https://www.youtube.com/watch?v=THnivyG0Mvo&t=620s&ab_channel=Brackeys">Brackey's video on shooting with raycasts</a><br/>
+                                            2. <a href="https://docs.unity3d.com/ScriptReference/Physics.Raycast.html">Unity's documentation on raycast</a><br/>
+                                            3. <a href="https://skfb.ly/oArPq">Finding the model for the main gun</a><br/>
+                                            4. <a href="https://skfb.ly/6wXsQ">Finding the model for the shotgun</a><br/>
+                                            5. <a href="https://skfb.ly/6WNwE">Finding the model for the knife</a><br/>
+                                            <u>Component testing:</u><br/>
+                                            This was used in order to test the functionalities of the guns before integrating them to the player model that was used
+                                             for the final version of the game, which had animation rigging and animations, meaning that there could be a lot more
+                                             problems than expected. Testing them separately, without the use of models for guns was an important step because like
+                                             I mentioned before, it is better to test the functionality first and fix the current issues, than to put the gun models
+                                             and have to worry about more problems that could arise.
+                                        </p>
+                                        </li>
+                                    <li><b>Results:</b>
+                                        <p style="margin-left: 5%;">For the first prototype of the main gun, a cube was used in place of the actual weapon, 
+                                            and in order to make it similar to how it will function when it's going to be fully implemented, the gun was inside 
+                                            an empty object named "Gun holder", which rotated at the same time and with the same value as the camera on the x axis, 
+                                            in order to move it up and down:</p>
+                                            <div class="image"><img src="images/Gun_rotation_on_camera.gif" alt="Gun rotation on camera"/></div><br/>
+                                        <p style="margin-left: 5%;">Now that the first prototype of the gun has been set up, it is time to implement the shooting mechanic. 
+                                            For the shooting mechanic, raycast is used in order to cast a ray that is starting from the camera's position and rotation, 
+                                            in the direction of where it's pointing. Note that the shot is being cast from the camera and not the gun in order to avoid 
+                                            strange behavior of the gun (in case it is not orienting correctly) and to avoid being able to shoot through walls. A range was 
+                                            also added to this, so it's impossible to shoot at an infinite distance, and after testing and doing some tweaking, I found the 
+                                            right amount of range for the gun in order to not be able to "cheese" the enemies that will be in the future, so not being able to 
+                                            shoot them from very far because that doesn't give the feeling of challenge anymore. The first prototype of the gun shooting mechanic 
+                                            can be seen in this gif, in which I have added an impact force to when the raycast hits, so that it pushes the target a tiny bit:</p>
+                                            <div class="image"><img src="images/Gun_prototype_shot.gif" alt="Gun prototype shot" /></div>
+                                        <p style="margin-left: 5%;">The next step I took in order to make the gun feel like an actual bolt action rifle and not break the immersion of the player, 
+                                            I added a shot sound to the gun, and with the use of coroutines I created a system that prevents the player from shooting the gun 
+                                            until the sound of the shooting is over. It is important to note that this system was used for shooting because it needs to 
+                                            replicate the feel of a bolt action rifle, which you need to cock after every shot, so that is why you can only shoot after 
+                                            the sound is finished. Ideally, an animation of cocking the gun should also be played along with the sound, but in this case 
+                                            it proved too difficult to implement (the gun model needs rigging, an animation needs to be recorded specifically for the gun
+                                            and more). I also prevented the player from shooting while the gun is reloading of course, and all of this can be seen in the 
+                                            video <b><a href="https://www.youtube.com/watch?v=JFco5sxJXaU&ab_channel=Peter">I have uploaded on YouTube</a></b>.</p> 
+                                        <p style="margin-left: 5%;">The reload mechanic is relatively simple because it checks for how many bullets are left in the magazine, and if it has 
+                                            reached 0, or if there are fewer bullets in the magazine than the maximum amount and the player has pressed the "R" key, 
+                                            it will start reloading, provided there is enough ammo left, of course. I added an extra quirk to the reload mechanic by 
+                                            making a coroutine to check if the player has pressed the "R" key before the sound of the shot is done playing, so it waits 
+                                            out for the shot sound to finish and then it starts the reload coroutine, making it a little easier for the player to reload 
+                                            if he wants to because it can get frustrating to have to wait for the sound/animation to finish to be able to press "R" and reload.</p>
+                                        <p style="margin-left: 5%;">The shotgun uses the same concepts as the bolt action rifle, but it does not cock the gun after each shot, and instead can shoot twice, 
+                                            after which it needs to reload. The unique part about the shotgun is that it has a different mechanic to how the bullets are actually fired, 
+                                            meaning the raycasts. Instead of projecting a ray that is starts from the camera and is pointed to the center of the screen, the shotgun uses 4 rays, 
+                                            simulating real life pallets of a shotgun, and each one goes in a different direction:</p>
+                                            <div class="image"><img src="images/Shotgun_pallets_edited.gif" alt="Shotgun pallets" /></div><br/>
+                                        <p style="margin-left: 5%;">As shown above, the pallets' direction is different for each pallet. One goes up, one goes down, one to the left and one to the right.<br/><br/>
+                                            Now that the first prototype of the first gun is working, it is time to look for gun model fit for the game, making sure it fits with the game's aesthetic.
+                                            The model that I found is of a Kar98, and it seemed like the best choice because of the clean look of the model and because it is old enough. Even though the 
+                                            game's story is set during The Civil War and Kar98 is more modern than that (first used in 1935), it did fit the aesthetic of the game.</p>
+                                            <div class="image"><img src="images/Kar98_before.png" alt="Kar 98" /></div><br/>
+                                        <p style="margin-left: 5%;">As you can see in the picture, the model came with some bullets, which unfortunately were part of the gun model 
+                                            (that being how the modeler left it), and could not be simply deleted or moved through Unity, so I had to cut them out in Blender.<br/><br/>
+                                            After attaching the gun to the character, and rigging it, which is described in detail in the following devlog about animations, 
+                                            I created a particle effect for the gun shot and one for the impact hit, whenever a target is hit by a bullet, in order to give 
+                                            a more immersive and overall better feel of the game:</p>
+                                            <div class="image"><img src="images/Gun_particles_edited.gif" alt="Gun particles" /></div><br/>
+                                        <p style="margin-left: 5%;">As you can see from the gif, there is a shot particle effect and there is an impact particle effect. Both weapons use the same effects, 
+                                            but I showcased both of them because the shot particle is more clear on the bolt action rifle. The shot particle effect also has a point
+                                            light as a child object, which is turned on whenever the gun is shot, to simulate the lighting that is produced when a gun is shot in 
+                                            real life, so if this was in a dark room, it would light up the room slightly, for less than one second. The impact particle 
+                                            effect is responsive to the actual hit, so it angles based on how the raycast actually hit the object, involving the rotation as well.</p>
+                                        <p style="margin-left: 5%;">The knife weapon makes use of an animation in order to attack, which is described the following devlog about animations. 
+                                            In order to register the hit on an enemy, all enemies need to have a Rigidbody component on them for this to work because the 
+                                            knife makes use of a box collider, which has the "isTrigger" set to true. Also, a hit is registered on the enemy only when the 
+                                            animation is played, or more precisely, when the player attacks with the knife because otherwise it would just damage an enemy if 
+                                            it came close to the knife. The collider of the knife is quite big, but after making a lot of tweaks to its size, this was found to 
+                                            be the optimal size for it to allow the player to hit the enemies from a realistic distance:</p>
+                                            <div class="image"><img src="images/Knife_hitbox.png" alt="Knife hitbox" style="width: 90%;" /></div><br/>
+                                        <p style="margin-left: 5%;">Now that all of the mechanics of the weapons are implemented, it is time to configure the gun holder, which is the game object 
+                                            that holds all of the weapons. This acts almost like an inventory with all the weapons, but it uses some logic when switching weapons. 
+                                            Whenever the player switches the weapon, the rigging is also switched, which is all detailed in the following devlog about animations, 
+                                            but it is also checked if the gun has finished firing, meaning the sound/animation has finished playing, or in case the knife is active 
+                                            and about to be switched, if the animation of the hit is done playing. After this is checked, there is an extra check if the guns were 
+                                            reloading during the moment that the gun was switched (not applicable to the knife), and if they were, the reload on the respective gun 
+                                            will be reset, so the player will have to go through the whole reload animation when he switches back. This mechanic was added in order
+                                            to make the feel of the guns more realistic and to not give the impression of a more arcade-ish game.</p>
+                                        <p style="margin-left: 5%;">The feature to zoom with the rifle was also added, making it easier to shoot at a longer distance. This was done by 
+                                            lowering the camera's FOV when the right mouse button is held, and on release, bringing it back to normal:</p>
+                                            <div class="image"><img src="images/Rifle_Zoom.gif" alt="Rifle zoom" /></div><br/>
+                                    </li>
+                                    <li><b>Validation:</b>
+                                        <p style="margin-left: 5%;">A lot of tweaking has been done on the weapons to make the player feel like he is playing in the time period 
+                                            of The Civil War. For the bolt action rifle, different kind of sounds were tested in order to make the gun feel slow, because it 
+                                            requires the player to wait between each shot, replicating the feel of having to cock the gun, so a longer time was chosen, same as 
+                                            for the reload, since it replicates the feeling of having load the gun with one bullet at a time. The rifle is a powerful gun, so the 
+                                            player can shoot from a good distance and kill the weaker enemies in one hit, but the tradeoff is that it takes a long time to operate
+                                            and it is harder to use at close range. The shotgun, on the other hand, needs to have the feeling of being really powerful at 
+                                            close range, dealing high damage, but getting increasingly worse at longer ranges. The pallet system that is used makes a great 
+                                            job at that because every pallet has its own damage, so the further an enemy is, the fewer pallets will hit him. At close range 
+                                            it is very effective and it will kill most of the enemies with all the four pallets hitting, but it is limited to two shots before 
+                                            having to reload, and there is also a small timer in between shots, in order to make it viable and not extremely powerful. The knife 
+                                            however, is limited to the animation that it uses, which has some issues with the rigging of the hands to the weapon, causing some 
+                                            jitter, but it serves its purpose as intended. The collider or hitbox of the knife was increased in length until it gave the feel 
+                                            that the player can attack enemies from a realistic hand-to-hand combat scenario. The knife can also hit more targets while attacking 
+                                            because it is a slashing animation.</p>
+                                        <p style="margin-left: 5%;">Overall, the feel of the weapons is that they belong to the time period of when the game takes place, but also that they are 
+                                            part of an important soldier's arsenal.</p>
+                                    </li>
+                                    <li><b>Next steps:</b>
+                                        <p style="margin-left: 5%;">The next steps are to manage the rigging of the guns to the player, or more precise, attaching the hands 
+                                            of the player's model to the weapons, so that they move in accord to the body when aiming. Making the HUD is also related to the 
+                                            guns and the player, since it shows the health of the player, how much ammo he has left on each weapon, the reload time of the guns, 
+                                            and the most important, the crosshair.</p>
+                                    </li>
+                                </ul>
+                                <h3>Animations devlog</h3>
+                                <ul>
+                                    <li><b>Challenge:</b> 
+                                        <p style="margin-left: 5%;">The challenge is to find the proper animations for the player in order to give the feeling of a polished 
+                                            game and to rig all of the weapons to the player's model, so that the hands are attached to the guns and they move accordingly to 
+                                            the player's aim. The camera is part of the player's head, so whenever he aims up or down, the head moves with it, and when he aims
+                                            left or right, the whole body rotates, which can be seen in the previous devlog. It is important to give the feeling of 
+                                            realistic gun handling, so the goal is to make the hands and the gun move according to the aim, or more precisely, the head, since 
+                                            it is a first-person shooter, and the player aims and is ready to shoot at all times.</p></li>
+                                    <li><b>Methods:</b>
+                                        <p style="margin-left: 5%;">
+                                            <u>Literature study (links):</u><br/>
+                                            1. <a href="https://www.youtube.com/watch?v=Htl7ysv10Qs&ab_channel=Brackeys">Learning about animation rigging in general</a><br/>
+                                            2. <a href="https://www.youtube.com/watch?v=iirDUDTkYAU&ab_channel=ShadowGameStudios">Learning how to create a rig for weapons using a humanoid rig</a><br/>
+                                            3. <a href="https://docs.unity3d.com/Manual/InverseKinematics.html">Unity IK</a><br/>
+                                            4. <a href="https://www.youtube.com/watch?v=luBBz5oeR4Q&ab_channel=CodeMonkey">Making the rig (gun and hands) follow the actual aim</a><br/>
+                                            5. <a href="https://www.mixamo.com/#/?page=1&type=Motion%2CMotionPack">Finding animations for the player model such as walking, slashing etc</a><br/>
+                                            6. <a href="https://www.youtube.com/watch?v=E8VJ7wm1mcA&ab_channel=RoyalSkies">Learning about how to use both animations and rigging at the same time: avatar masks</a><br/>
+                                            7. <a href="https://community.gamedev.tv/t/using-inverse-kinematics-for-hand-placement/213823">Learning how to use the animator for smooth animation blending and setting IK in code</a><br/>
+                                            <u>Component testing:</u><br/>
+                                            This was used in order to test the rigging of the player's model to the guns separately of using animations because using 
+                                            them together is a long and complicated process which requires a lot of tweaking and a lot of testing with Unity's animator 
+                                            and avatar masks. Rigging of the character was done at first, after which animations were found and added to the process after 
+                                            rigging was tested. Rigging was done and tested at first on the shotgun, and after it was implemented, the rifle and the knife were next.
+                                        </li>
+                                    <li><b>Results:</b>
+                                        <p style="margin-left: 5%;">The first step that I took to make the feel of the gun play more polished was to rig the guns to the 
+                                            player's model. An animator and a rig builder component were placed on the parent object of the player. Afterwards, I found that
+                                            inverse kinematics are the tool that is used in order to move the tip of a body part of a model, in this case the hand, and have
+                                            all connected body parts follow and simulate the physics of that tip. The first rig that I created was the rig of the hands IK, 
+                                            and to it I have added two empty objects to which I put two bone IK constraints. The objects had the following constraints: 
+                                            the root was the arm, the mid was the forearm and the tip was the hands, so the model's whole arm followed the hand and made 
+                                            its changes to the elbow and shoulder accordingly:</p>
+                                            <div class="image"><img src="images/Arm_IK.gif" alt="Arm IK" /></div><br/>
+                                        <p style="margin-left: 5%;">In order for this to work, a target and a hint need to be attached to the two bone IK constraints. The target is basically
+                                            the default position that you set that constraint to be in, and a hint, in this case is for the elbow, so that you can lower 
+                                            or raise it. I made each hint a child of the respective arm's elbow, so for the left hand IK, the hint was inside the left 
+                                            forearm object, and for the right hand IK, the right forearm object of the model. I found that it is best to put the target 
+                                            inside the object that you want the actual constraint to follow, so I made the left hand target and the right hand target children
+                                            of the shotgun object. After this, the gun was positioned at the right shoulder, since it made the most sense to belong to because 
+                                            it was decided that the character is right handed:</p>
+                                            <div class="image"><img src="images/Shotgun_location.png" alt="Shotgun location" /></div><br/>
+                                        <p style="margin-left: 5%;">The next step was to configure these targets that I had set up in the shotgun object, in order for them to be placed correctly on 
+                                            the weapon. A rig transform component was also added on the shotgun because it makes the targets follow the constrained object. After 
+                                            placing the hand on the gun, I quickly realized that there was something wrong about the elbow placement, as can be seen in the example:</p>
+                                            <div class="image"><img src="images/Rig_wrong_elbow.png" alt="Wrong elbow positon" /></div><br/>
+                                        <p style="margin-left: 5%;">This is where the hints come in to place, as they are children of the forearms of the respective hands. Moving the hints towards 
+                                            outside of the arm fixed this issue:</p>
+                                            <div class="image"><img src="images/Rig_correct_position.png" alt="Correct elbow positon" /></div><br/>
+                                        <p style="margin-left: 5%;">After polishing the position and rotation of the targets and the hints as to give a good impression of the player 
+                                            actually holding the weapon, the next step was to create a second rig, which contained two multi-aim constraints: a body 
+                                            aim and an aim object. The multi-aim constraint takes an object and makes it follow a target, so for the body aim I constrained 
+                                            the spine, and for the aim I constrained the shoulder because it is the root object that moves when aiming up or down. Both of 
+                                            these constraints' target was a sphere object and placed it at a short distance in front of the character, and at first I created 
+                                            one to test if the functionality worked:</p>
+                                            <div class="image"><img src="images/Rig_Following_Practice_Target.gif" alt="Rig_Following_Practice_Target" /></div><br/>
+                                        <p style="margin-left: 5%;">As can be seen in the gif, the spine is the first to bend after the target, and this is because the gun needs to be in front of 
+                                            the camera, so the players' head at all times, in order to have a good feel in a first-person shooter game. Next, I made this 
+                                            target's position be controlled by a script, which had one sole purpose of positioning the sphere at a distance from the player, 
+                                            and in front of the camera at all times. This is the result:</p>
+                                            <div class="image"><img src="images/Rig_Following_Target.gif" alt="Rig_Following_Target" /></div><br/>
+                                        <p style="margin-left: 5%;">The only thing that needed to be done after this was to hide the target's mesh and to make sure that the collider was off, which it was.<br/><br/>
+                                            Now that the first weapon was rigged, I had to repeat the same process for the bolt action rifle and the knife. First I disabled 
+                                            the shotgun because there needs be only one gun active at a time and positioned the gun to the right shoulder. I created the left 
+                                            hand and right hand target objects and placed them inside the rifle object, and a left hand and a right hand hint inside the elbows. 
+                                            I created a script that handles gun changing inside the game, so that the player can switch weapons, and the rigging is also switched 
+                                            to its relative weapon when done so. This is what it looked like after making the switch of the rigging based on the weapon work:</p>
+                                            <div class="image"><img src="images/Rig_Changes_On_Weapon_Change.gif" alt="Rig_Changes_On_Weapon_Change" /></div><br/>
+                                        <p style="margin-left: 5%;">As you can see, the hands placement on each gun is also changed.<br/><br/>
+                                            The same process was done for the knife, but since the knife requires only one hand to use, it was only rigged to the right hand, 
+                                            whilst the left hand was placed away from the view of the player.
+                                            After finishing up the rigging for all weapons and making them switch correctly, finding proper animations for the game was essential, 
+                                            in order to make the game feel polished. The animations that are used in the game are an idle animation, which works when the player is
+                                            not moving, a walking animation, which is played when the player moves, and a slashing animation, which is played when the player strikes
+                                            with the knife (presses left mouse button). When I placed the animations in the animator and made the logic for them, I quickly realized 
+                                            that the rig of the weapons was not working, so I had then discovered avatar masks. In an avatar mask you can choose which part of the 
+                                            body is affected by the animation, and which one is not, and they can be set up to be used on specifically chosen layers inside the 
+                                            animator. This is what the avatar mask of the main layer of the animator, which contained the idle and the walking animation, 
+                                            looked like :</p>
+                                            <div class="image"><img src="images/Steve_Aims_Avatar_Mask.png" alt="Steve_Aims_Avatar_Mask" /></div><br/>
+                                        <p style="margin-left: 5%;">I selected out the upper body because that has to be controlled by the rig, and not by the default animations.</p>
+                                        <p style="margin-left: 5%;">After this was set up, I tried creating an animation for reloading, by just pulling the gun down so that it gets out of the 
+                                            player's sight, and return it to its original position after the reload was done. This proved too difficult to make because a 
+                                            weird bug of making the player enter the ground appeared with it, and I didn't have the knowledge or time to fix it, so a small 
+                                            bar in the HUD took place of this animation. I also created an avatar mask specifically for the reload, but to no 
+                                            avail. This is what the animation looked like when I tried to integrate it into the animator and the flow of animations:</p>
+                                            <div class="image"><img src="images/Reload_Animation_Bug.gif" alt="Reload_Animation_Bug" /></div><br/>
+                                        <p style="margin-left: 5%;">In order to attack using the knife, a swinging animation is played, which moves the hand in a swinging motion from right to 
+                                            left and back to the right, whilst making use of the rig, so that the knife is in the hand of the player while doing so. The 
+                                            knife has a collider on it, and whenever the animation is played, it detects collisions with enemies and damages them accordingly:</p>
+                                            <div class="image"><img src="images/Knife_Animation.gif" alt="Knife_Animation" /></div><br/>
+                                        <p style="margin-left: 5%;">There are still a few issues with the animation, as can be seen in the gif because setting up the avatar mask for the knife 
+                                            attack and making it work with the rigging of the hands to the weapon proved difficult.</p>
+                                    </li>
+                                    <li><b>Validation:</b>
+                                        <p style="margin-left: 5%;">Tweaking was done on the speed of the walking animation in order to make it match 
+                                            the movement speed of the character and to give a good feel, and to the rigged targets of each weapon and hint, 
+                                            in order to give the impression that the player is actually holding the weapon in his hands.</p>
+                                    </li>
+                                    <li><b>Next steps:</b>
+                                        <p style="margin-left: 5%;">The next steps are to improve the knife animation, so that it does not cause
+                                            jitter anymore and to fix the reload animation.</p>
+                                    </li>
+                                </ul>
+                                <h3>HUD devlog</h3>
+                                <ul>
+                                    <li><b>Challenge:</b> 
+                                        <p style="margin-left: 5%;">The challenge is to create a HUD that is minimalistic and show the player important 
+                                            information about the gameplay, such as the crosshair, the health, the ammo and the reload time. It is important 
+                                            that the HUD doesn't flood the screen, since it is a first-person shooter.</p></li>
+                                    <li><b>Methods:</b>
+                                        <p style="margin-left: 5%;">
+                                            <u>Literature study (links):</u><br/>
+                                            1. <a href="https://www.youtube.com/watch?v=THnivyG0Mvo&t=620s&ab_channel=Brackeys">Brackey's video on shooting</a><br/>
+                                            2. <a href="https://www.youtube.com/watch?v=J1ng1zA3-Pk&t=602s&ab_channel=GameDevGuide">Creating loading bars in Unity</a><br/>
+                                        </li>
+                                    <li><b>Results:</b>
+                                        <p style="margin-left: 5%;">The first step I took to making the HUD was to create a crosshair. At first, I created a canvas, 
+                                            which is where all of the HUD elements are stored and it describes how they are manipulated on the screen. Making the crosshair
+                                             was simple, I created an image object and made it a child of the canvas, chose a knob image, the color, and positioned it to the 
+                                             center of the screen:</p>
+                                            <div class="image"><img src="images/Crosshair.png" alt="Crosshair" /></div><br/>
+                                        <p style="margin-left: 5%;">Afterwards, I made two text objects, which are children of the canvas, and updated them based on the 
+                                            values of the player's health, or the ammo that is relative to the gun that is active. Each gun has its own class, in which the 
+                                            ammo lives separately, so when the gun is changed, the text objects enabled or disabled. This was done to prevent showing ammo when 
+                                            the knife is active, since it has no ammo.</p>
+                                            <div class="image"><img src="images/Hud_Ammo_And_Health.png" alt="Hud_Ammo_And_Health" style="width: 100%;" /></div><br/>
+                                        <p style="margin-left: 5%;">The next step was to make a reload bar, showing the player the time left until the reload of the 
+                                            gun is finished because the animation proved to be difficult to add to the animations flow:</p>
+                                            <div class="image"><img src="images/Reload_Bar.gif" alt="Reload bar" /></div><br/>
+                                        <p style="margin-left: 5%;">The reload bar was done by creating two image objects, one with a white image, and one with a black 
+                                            image. They are both placed in the exact same position, and filling the bar is done by updating the fill property of the second 
+                                            image based on the time left to reload for the respective gun.</p>
+                                        <p style="margin-left: 5%;">The reload bars are activated when the reload event happens, and disabled after it has finished 
+                                            filling up the bar. The bar is also disabled when the gun is switched, even though the previous gun was still reloading.</p>
+                                    </li>
+                                    <li><b>Validation:</b>
+                                        <p style="margin-left: 5%;">Tweaking was done on the size of the text, the color and the size of the reload bar, 
+                                            in order to give the feeling of a minimalistic HUD.</p>
+                                    </li>
+                                    <li><b>Next steps:</b>
+                                        <p style="margin-left: 5%;">The next steps are to use images instead of text for health and ammo, giving a 
+                                            better and more polished visual look.</p>
+                                    </li>
+                                </ul>
+                                <p>Github link for the repository: 
+                                    <a href="https://github.com/Howtoflail/Duo-Project" class="icon brands alt fa-github"><span class="label">Project</span></a></p>
+                            </section>
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section class="split contact">
+						<section>
+							<h3>Email</h3>
+							<p>skeenoteeth2@gmail.com</p>
+						</section>
+						<section>
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://github.com/Howtoflail" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Dragos Andrei Munteanu</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
